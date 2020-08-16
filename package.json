@@ -1,0 +1,62 @@
+{
+  "name": "energyaustralia",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "dist/energyaustralia.umd.js",
+  "module": "dist/energyaustralia.es5.js",
+  "typings": "dist/types/energyaustralia.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "carlhusselbee <chusslb@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "ts-node src/main.ts ",
+    "test": "jest --verbose",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testEnvironment": "node",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/lodash": "^4.14.159",
+    "@types/node": "^10.11.0",
+    "cross-env": "^5.2.0",
+    "jest": "^23.6.0",
+    "jest-config": "^23.6.0",
+    "lint-staged": "^8.0.0",
+    "lodash": "^4.3.0",
+    "prettier": "^1.14.3",
+    "retry-axios": "^2.2.1",
+    "ts-jest": "^23.10.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
